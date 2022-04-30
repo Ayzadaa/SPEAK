@@ -5,6 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SPEAK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&family=Inter:wght@400;500;600;700&family=Kumbh+Sans:wght@400;700&family=Lato:wght@400;900&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/main.min.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="header__logo logo" href="#"
+            ><img class="logo__img" src="image/logo.svg" alt="logo"
+          /></a>
+          <button class="header__nav-toggle">
+            <img src="image/burger_menu.svg" alt="burger_menu" />
+          </button>
+          <nav class="header__nav">
+            <ul class="menu">
+              <li class="menu__item">
+                <a class="menu__link" href="#">About us</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Blog</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__lang">
+            <img src="image/Eng-flag.png" alt="icon" />
+            <p>EN</p>
+            <img src="image/icon_chevron.svg" alt="icon" />
+          </div>
+          <button class="header__btn">Войти</button>
+        </div>
+
+        <main class="main">
+          <section class="hero">
+            <div class="container">
+              <div class="hero__left">
+                <span class="hero__info">+300 прошедших отбор психологов</span>
+                <h1 class="hero__title">Сессии с психологом Онлайн</h1>
+                <a class="hero__link" href="#">Начать беседу</a>
+              </div>
+              <div class="hero__right">
+                <img src="image/man.png" alt="man" />
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </header>
+  </body>
 </html>

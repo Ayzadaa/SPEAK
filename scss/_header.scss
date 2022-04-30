@@ -1,0 +1,9 @@
+@import "vars";
+
+.header {
+  padding: 29px 0;
+
+  &__nav-toggle {
+    display: none;
+  }
+}
