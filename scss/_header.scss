@@ -6,4 +6,10 @@
   &__nav-toggle {
     display: none;
   }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

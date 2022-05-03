@@ -1,0 +1,71 @@
+@import "vars";
+
+.banner {
+  margin: 82px 0 141px 0;
+  display: flex;
+  justify-content: space-between;
+
+  &__info {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: $fw-regular;
+    font-size: 18px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: $color-turquoise;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: $fw-bold;
+    font-size: 48px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    color: #0e0e0f;
+  }
+
+  &__link {
+    padding: 14px 30px;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: $fw-bold;
+    font-size: 18px;
+    line-height: 120%;
+    color: $color-white;
+    background: linear-gradient(225deg, #00b9b6 0%, #00cdac 100%);
+    box-shadow: 0px 15px 30px rgba(220, 232, 243, 0.25);
+    border-radius: 12px;
+    text-decoration: none;
+  }
+}
+
+.cloud1 {
+  position: absolute;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -120%);
+  img {
+    width: 242px;
+  }
+}
+
+.cloud2 {
+  position: absolute;
+  background-repeat: no-repeat;
+  transform: translate(60%, -350%);
+  img {
+    width: 110px;
+  }
+}
+.cloud3 {
+  position: absolute;
+  background-repeat: no-repeat;
+  transform: translate(200%, -300%);
+  img {
+    width: 167.34px;
+  }
+}
