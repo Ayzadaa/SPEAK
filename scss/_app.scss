@@ -4,6 +4,7 @@
   margin-bottom: 139.5px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 50px;
 
   &__title {
@@ -63,5 +64,8 @@
 
 .btns {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+
   gap: 20px;
 }
