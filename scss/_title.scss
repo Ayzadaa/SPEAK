@@ -1,0 +1,10 @@
+@import "vars";
+
+.title {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: $fw-bold;
+  font-size: 32px;
+  line-height: 120%;
+  color: $color-black2;
+}

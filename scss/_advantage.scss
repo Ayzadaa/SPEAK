@@ -1,0 +1,78 @@
+@import "vars";
+
+.advantage {
+  margin-bottom: 118px;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background: rgba(0, 185, 182, 0.1);
+  border-radius: 24px;
+
+  &__title {
+    padding-left: 10px;
+  }
+  &__left {
+    position: relative;
+    top: -40px;
+
+    &-img {
+      padding: 0 45px 0 45px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 85px 30px 116px 0;
+  }
+
+  &__title {
+    margin: 0;
+    padding-bottom: 44px;
+    padding-left: 18px;
+    letter-spacing: 2.5px;
+  }
+}
+
+.adv-list {
+  margin: 0;
+
+  &__item {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-bottom: 20px;
+    list-style: none;
+  }
+  &__title {
+    position: relative;
+    padding-bottom: 5px;
+    margin: 0;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: $fw-bold;
+    font-size: 20px;
+    line-height: 120%;
+    color: $color-black2;
+    &::before {
+      position: absolute;
+      content: "•";
+      color: #00b9b6;
+      // left: -10px;
+    }
+  }
+
+  &__txt {
+    margin: 0;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: $fw-regular;
+    font-size: 18px;
+    line-height: 140%;
+    color: $color-black2;
+  }
+}

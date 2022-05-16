@@ -1,0 +1,224 @@
+@import "vars";
+
+.servises {
+  margin-bottom: 158px;
+
+  &__title {
+    padding-bottom: 18px;
+    letter-spacing: 2.5px;
+  }
+
+  &__inner {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+  }
+}
+.cards__left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px;
+  margin-right: 22px;
+  position: static;
+  width: 454px;
+  height: 317px;
+  left: 0px;
+  top: 17.5px;
+  background: rgba(0, 185, 182, 0.1);
+  border-radius: 24px;
+}
+
+.card__payment {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  padding-bottom: 36px;
+  position: static;
+  width: 394px;
+  // height: 89px;
+  left: 30px;
+  top: 30px;
+  // padding: 30px 120px 28px 25px;
+  // margin: 0;
+}
+
+.card__payment-time {
+  // padding: 16px 0px 7px;
+  margin: 0;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: $fw-bold;
+  font-size: 20px;
+  line-height: 140%;
+  color: $color-dark;
+}
+
+.card__payment-price {
+  margin: 0;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 100%;
+  color: #333333;
+}
+.card__payment-week {
+  padding-left: 10px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: $fw-regular;
+  font-size: 24px;
+  line-height: 140%;
+  color: $color-dark;
+}
+
+.card__list {
+  margin: 0;
+  padding-left: 0;
+  padding-bottom: 18px;
+}
+
+.card__item {
+  margin: 0;
+  padding-bottom: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #333333;
+  list-style: none;
+  text-align: justify;
+  &::before {
+    content: "";
+    background-image: url(../image/galochki.png);
+    padding-right: 25px;
+  }
+}
+
+.card__btn {
+  padding: 12px 30px 14px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: $fw-bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: $color-turquoise;
+  background: $color-white;
+  box-shadow: 0px 15px 30px rgba(220, 232, 243, 0.25);
+  border-radius: 12px;
+  border: none;
+}
+
+.card__right {
+  margin: 0;
+  width: 649px;
+  height: 352px;
+  position: relative;
+  background: $color-turquoise;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
+    0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+    0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+    0px 20px 13px rgba(0, 0, 0, 0.01),
+    0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+    0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  border-radius: 24px;
+}
+
+.card__popular {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 9px 0px 11px 16px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: $fw-medium;
+  font-size: 16px;
+  line-height: 100%;
+  color: $color-white;
+  background: #ffa800;
+  border-radius: 0px 24px 0px 12px;
+
+  &::after {
+    content: "";
+    background-image: url(../image/icon_star.svg);
+    background-repeat: no-repeat;
+    padding-right: 35px;
+  }
+}
+
+.card__top {
+  padding: 30px;
+
+  &-info {
+    margin: 0;
+    padding: 5px 0px;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: $fw-bold;
+    font-size: 20px;
+    line-height: 140%;
+    color: $color-white;
+  }
+
+  &-price {
+    margin: 0;
+    padding-right: 10px;
+    font-weight: $fw-bold;
+    font-size: 56px;
+    line-height: 100%;
+    color: $color-white;
+  }
+
+  &-min {
+    margin: 0;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: $fw-regular;
+    font-size: 24px;
+    line-height: 140%;
+    color: $color-white;
+  }
+}
+
+.card__item2 {
+  padding-bottom: 10px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: $fw-regular;
+  font-size: 18px;
+  line-height: 140%;
+  color: $color-white;
+  list-style: none;
+
+  &::before {
+    content: "";
+    background-image: url(../image/galochka.png);
+    background-repeat: no-repeat;
+    padding-right: 25px;
+  }
+}
+
+.card__bottom {
+  padding: 0 30px 30px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-input {
+    width: 430px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    margin-right: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+  }
+}
+
+.lists {
+  padding-left: 30px;
+}

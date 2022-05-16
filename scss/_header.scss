@@ -1,0 +1,18 @@
+@import "vars";
+
+.header {
+  max-width: 1120px;
+  margin-bottom: 74px;
+
+  &__nav-toggle {
+    display: none;
+  }
+
+  &__inner {
+    padding: 27px 0;
+    max-width: 1120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
