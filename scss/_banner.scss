@@ -1,9 +1,13 @@
 @import "vars";
 
 .banner {
-  margin: 82px 0 141px 0;
+  margin-bottom: 145px;
   display: flex;
   justify-content: space-between;
+
+  &__left {
+    padding-top: 45px;
+  }
 
   &__info {
     font-family: $main-font;
@@ -18,7 +22,7 @@
 
   &__title {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 61px;
     font-family: $main-font;
     font-style: normal;
     font-weight: $fw-bold;

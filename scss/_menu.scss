@@ -7,7 +7,7 @@
   list-style: none;
 
   &__item + &__item {
-    margin-left: 40px;
+    margin-left: 31px;
   }
 
   &__link {
@@ -25,4 +25,16 @@
       color: lighten($color-dark, 40%);
     }
   }
+}
+
+.about-us {
+  padding-left: 15px;
+}
+
+.blog {
+  padding-left: 5px;
+}
+
+.contact {
+  padding-right: 20px;
 }

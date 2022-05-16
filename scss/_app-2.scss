@@ -4,7 +4,7 @@
   margin-bottom: 140px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 
   &__left {
     // background: url(../image/main.svg);
@@ -14,8 +14,18 @@
 }
 
 .app__right {
+  margin: 0;
+  padding-top: 30px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
   width: 455px;
   height: 330px;
+  // padding-bottom: 30px;
+
+  &__title {
+    letter-spacing: 50px;
+  }
 }
 .appstore {
   margin: 0%;

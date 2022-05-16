@@ -1,20 +1,25 @@
 @import "vars";
 
 .about {
-  margin-bottom: 144.38px;
+  margin-bottom: 144px;
 
   &__title {
-    margin-bottom: 49.67px;
+    margin-bottom: 52px;
     text-align: center;
+    letter-spacing: 2.5px;
   }
 
   &__inner {
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
   }
 
   &__left {
-    margin-right: 95px;
+    padding: 0;
+    margin-right: 55px;
+    width: 760px;
+    height: 423px;
 
     iframe {
       filter: drop-shadow(0px 4px 25px rgba(0, 185, 182, 0.25));
@@ -24,17 +29,18 @@
 }
 
 .numbers {
+  margin-top: 10px;
   display: flex;
   flex-flow: column;
   gap: 40px;
 }
 .numbers__item {
+  // margin-top: 15px;
   list-style: none;
   gap: 40px;
   align-items: center;
 
   &__nums {
-    margin: 0px 0px;
     font-family: $main-font;
     font-style: normal;
     font-weight: 700;
@@ -55,27 +61,31 @@
 }
 
 .services {
-  margin-top: 66.62;
+  margin-top: 69px;
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .service {
-  margin: 20px;
+  width: 550px;
+  height: 120px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
-  padding: 20px 30px;
+  padding: 0px 20px;
   background: #ffffff;
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.05);
   border-radius: 24px;
 
   &__img {
-    padding: 10px;
+    padding: 10px 10px 25px 10px;
   }
 
   &__descr__title {
-    margin-bottom: 5px;
+    // margin-top: 15px;
+    margin-bottom: 10px;
     font-family: $main-font;
     font-style: normal;
     font-weight: 700;
@@ -85,12 +95,16 @@
   }
   &__descr__txt {
     margin: 0;
-    padding-bottom: 21px;
+    padding-bottom: 45px;
     font-family: $main-font;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 140%;
+    line-height: 130%;
     color: #333333;
   }
+}
+
+.time {
+  padding-right: 18px;
 }

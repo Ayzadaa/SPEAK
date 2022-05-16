@@ -1,26 +1,39 @@
 @import "vars";
 
 .help {
-  margin-bottom: 140px;
+  margin-bottom: 178px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: left;
 
   &__left {
+    max-width: 678px;
+    min-height: 308px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-right: 50px;
     padding: 0px;
   }
 
   &__title {
-    margin: 0 0 40px 0;
+    font-size: 36px;
+    margin: 0 0 35px 0;
   }
 
   &__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 436px;
     right: 361px;
+    img {
+      padding-left: 79px;
+      vertical-align: middle;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -39,8 +52,7 @@
     font-size: 18px;
     line-height: 140%;
     color: $color-dark;
-    padding-bottom: 15px;
-    padding-left: 20px;
+    padding-bottom: 10px;
 
     &::before {
       content: "";
@@ -54,4 +66,8 @@
       color: #00b9b6;
     }
   }
+}
+
+.bin {
+  padding-bottom: 33px;
 }

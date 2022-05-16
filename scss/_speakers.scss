@@ -1,19 +1,25 @@
 @import "vars";
 
 .speakers {
+  max-width: 1120px;
+  min-height: 567px;
   display: flex;
   flex-flow: column;
   align-items: center;
   width: 100%;
-  margin-bottom: 140px;
+  margin-bottom: 155px;
+  padding: 0;
 
   &__title {
-    padding-bottom: 55px;
+    margin: 0;
+    padding-bottom: 49px;
+    padding-right: 98px;
   }
 }
 
 .tags {
-  margin-bottom: 51px;
+  padding-left: 0;
+  margin: 0 0 48px 0;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -25,7 +31,7 @@
     flex-direction: row;
     align-items: flex-start;
     margin: 7px;
-    padding: 10px 30px;
+    padding: 8px 30px;
     font-family: $main-font;
     font-style: normal;
     font-weight: $fw-regular;
@@ -72,16 +78,17 @@
   &__items {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 15px;
-    margin: 0px 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0px 5px;
+    padding: 0px 20px 24px 20px;
     background: #ffffff;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.05);
     border-radius: 12px;
 
     &-img {
       border-radius: 12px;
-      margin: 15px 0;
+      margin: 15px 0 18px 0;
     }
   }
 
@@ -114,29 +121,60 @@
     transition: all 0.2s;
   }
   &__arrow {
-    margin: 0px 12px;
+    margin: 0px 10px 0 10px;
     color: #00b9b6;
   }
 }
 
 .dots {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  transform: rotate(-90deg);
+  display: block;
+  position: absolute;
+  top: 1817px;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 
   &__line {
-    min-height: 20px;
-    border: 2px solid rgba(0, 185, 182, 0.25);
-    margin: 5px 0px;
-    color: #00b9b6;
+    position: relative;
+    display: inline-block;
+    height: 7px;
+    width: 15px;
+    margin: 0;
+    padding: 0;
     cursor: pointer;
-    transition: all 0.2s;
-    align-items: flex-end;
+    list-style: none;
+    text-decoration: none;
+  }
+}
+.dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 7px;
+  width: 30px;
+  outline: none;
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
 
-    &:hover {
-      color: #1c5e5c;
-    }
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 20px;
+    height: 7px;
+    font-family: "slick";
+    font-size: 9px;
+    line-height: 20px;
+    text-align: center;
+    background: #00b9b6;
+    opacity: 0.25;
+    border-radius: 24px;
+    transition: all 0.3s;
   }
 }
